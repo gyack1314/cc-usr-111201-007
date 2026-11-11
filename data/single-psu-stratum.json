@@ -1,0 +1,126 @@
+{
+  "sample": [
+    {
+      "id": "H1P10",
+      "stratum": "H1",
+      "psu": "only",
+      "base_weight": 2.0,
+      "outcome": 1,
+      "features": {
+        "region": "east",
+        "load": "low"
+      },
+      "lower": 0.25,
+      "upper": 4
+    },
+    {
+      "id": "H1P11",
+      "stratum": "H1",
+      "psu": "only",
+      "base_weight": 2.0,
+      "outcome": 0,
+      "features": {
+        "region": "west",
+        "load": "high"
+      },
+      "lower": 0.25,
+      "upper": 4
+    },
+    {
+      "id": "H1P20",
+      "stratum": "H1",
+      "psu": "only",
+      "base_weight": 2.0,
+      "outcome": 0,
+      "features": {
+        "region": "east",
+        "load": "low"
+      },
+      "lower": 0.25,
+      "upper": 4
+    },
+    {
+      "id": "H1P21",
+      "stratum": "H1",
+      "psu": "only",
+      "base_weight": 2.0,
+      "outcome": 0,
+      "features": {
+        "region": "west",
+        "load": "high"
+      },
+      "lower": 0.25,
+      "upper": 4
+    },
+    {
+      "id": "H2P10",
+      "stratum": "H2",
+      "psu": "H2P1",
+      "base_weight": 2.0,
+      "outcome": 0,
+      "features": {
+        "region": "east",
+        "load": "low"
+      },
+      "lower": 0.25,
+      "upper": 4
+    },
+    {
+      "id": "H2P11",
+      "stratum": "H2",
+      "psu": "H2P1",
+      "base_weight": 2.0,
+      "outcome": 0,
+      "features": {
+        "region": "west",
+        "load": "high"
+      },
+      "lower": 0.25,
+      "upper": 4
+    },
+    {
+      "id": "H2P20",
+      "stratum": "H2",
+      "psu": "H2P2",
+      "base_weight": 2.0,
+      "outcome": 0,
+      "features": {
+        "region": "east",
+        "load": "low"
+      },
+      "lower": 0.25,
+      "upper": 4
+    },
+    {
+      "id": "H2P21",
+      "stratum": "H2",
+      "psu": "H2P2",
+      "base_weight": 2.0,
+      "outcome": 1,
+      "features": {
+        "region": "west",
+        "load": "high"
+      },
+      "lower": 0.25,
+      "upper": 4
+    }
+  ],
+  "target": {
+    "total": 16,
+    "margins": {
+      "region": {
+        "east": 6,
+        "west": 10
+      },
+      "load": {
+        "low": 6,
+        "high": 10
+      }
+    }
+  },
+  "solver": {
+    "tolerance": 1e-08,
+    "max_iterations": 10000
+  },
+  "confidence_z": 1.95996398454
+}
