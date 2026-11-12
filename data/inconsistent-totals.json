@@ -1,0 +1,194 @@
+{
+  "sample": [
+    {
+      "id": "H1P10",
+      "stratum": "H1",
+      "psu": "H1P1",
+      "base_weight": 2.0,
+      "outcome": 1,
+      "features": {
+        "region": "east",
+        "load": "low",
+        "type": "A"
+      },
+      "lower": 1.1,
+      "upper": 4.0
+    },
+    {
+      "id": "H1P11",
+      "stratum": "H1",
+      "psu": "H1P1",
+      "base_weight": 2.0,
+      "outcome": 0,
+      "features": {
+        "region": "east",
+        "load": "high",
+        "type": "A"
+      },
+      "lower": 0.25,
+      "upper": 4.0
+    },
+    {
+      "id": "H1P20",
+      "stratum": "H1",
+      "psu": "H1P2",
+      "base_weight": 2.0,
+      "outcome": 1,
+      "features": {
+        "region": "west",
+        "load": "low",
+        "type": "A"
+      },
+      "lower": 0.25,
+      "upper": 4.0
+    },
+    {
+      "id": "H1P21",
+      "stratum": "H1",
+      "psu": "H1P2",
+      "base_weight": 2.0,
+      "outcome": 0,
+      "features": {
+        "region": "west",
+        "load": "high",
+        "type": "B"
+      },
+      "lower": 0.25,
+      "upper": 4.0
+    },
+    {
+      "id": "H1P30",
+      "stratum": "H1",
+      "psu": "H1P3",
+      "base_weight": 2.0,
+      "outcome": 0,
+      "features": {
+        "region": "east",
+        "load": "low",
+        "type": "A"
+      },
+      "lower": 0.25,
+      "upper": 4.0
+    },
+    {
+      "id": "H1P31",
+      "stratum": "H1",
+      "psu": "H1P3",
+      "base_weight": 2.0,
+      "outcome": 1,
+      "features": {
+        "region": "east",
+        "load": "high",
+        "type": "A"
+      },
+      "lower": 0.25,
+      "upper": 4.0
+    },
+    {
+      "id": "H2P10",
+      "stratum": "H2",
+      "psu": "H2P1",
+      "base_weight": 2.0,
+      "outcome": 0,
+      "features": {
+        "region": "east",
+        "load": "low",
+        "type": "A"
+      },
+      "lower": 0.25,
+      "upper": 4.0
+    },
+    {
+      "id": "H2P11",
+      "stratum": "H2",
+      "psu": "H2P1",
+      "base_weight": 2.0,
+      "outcome": 1,
+      "features": {
+        "region": "east",
+        "load": "high",
+        "type": "A"
+      },
+      "lower": 0.25,
+      "upper": 4.0
+    },
+    {
+      "id": "H2P20",
+      "stratum": "H2",
+      "psu": "H2P2",
+      "base_weight": 2.0,
+      "outcome": 0,
+      "features": {
+        "region": "west",
+        "load": "low",
+        "type": "A"
+      },
+      "lower": 0.25,
+      "upper": 4.0
+    },
+    {
+      "id": "H2P21",
+      "stratum": "H2",
+      "psu": "H2P2",
+      "base_weight": 2.0,
+      "outcome": 0,
+      "features": {
+        "region": "west",
+        "load": "high",
+        "type": "B"
+      },
+      "lower": 0.25,
+      "upper": 4.0
+    },
+    {
+      "id": "H2P30",
+      "stratum": "H2",
+      "psu": "H2P3",
+      "base_weight": 2.0,
+      "outcome": 0,
+      "features": {
+        "region": "east",
+        "load": "low",
+        "type": "A"
+      },
+      "lower": 0.25,
+      "upper": 4.0
+    },
+    {
+      "id": "H2P31",
+      "stratum": "H2",
+      "psu": "H2P3",
+      "base_weight": 2.0,
+      "outcome": 1,
+      "features": {
+        "region": "west",
+        "load": "high",
+        "type": "B"
+      },
+      "lower": 0.25,
+      "upper": 4.0
+    }
+  ],
+  "target": {
+    "total": 24,
+    "margins": {
+      "region": {
+        "east": 14.0,
+        "west": 10.0
+      },
+      "load": {
+        "low": 10.0,
+        "high": 13.0
+      },
+      "type": {
+        "A": 18.0,
+        "B": 6.0
+      }
+    }
+  },
+  "solver": {
+    "tolerance": 1e-08,
+    "max_iterations": 10000
+  },
+  "confidence_z": 1.95996398454
+}
